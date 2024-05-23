@@ -1,0 +1,35 @@
+Detailed System Description: 
+In this project we used:
+•	Arduino Mega 2560 
+•	4 Channel Relay Module 5V
+•	HC-05 Bluetooth Module
+•	Bulb
+•	Natural Electricity from Home
+•	Arduino IDE
+First, we connected the HC-05 Bluetooth Module to the Arduino like this.
+•	HC-05 Bluetooth Module >> Arduino 
+•	VCC >> 3.3V 
+•	GND >> GND
+•	TXD >> RX0
+•	RXD >> TX0 
+
+Second, we connected the 4 Channel Relay Module 5V to the Arduino as well like this.
+•	4 Channel Relay Module 5V >> Arduino 
+•	GND >> GND
+•	IN1 >> PWM 2
+•	IN2 >> PWM 3
+•	IN3 >> PWM 4
+•	IN4 >> PWM 5
+•	VCC >> 5V 
+Third, we connected the Bulb to the 4 Channel Relay Module 5V.
+We connected the pin of the bulb to Normally open and commonly open.
+Finally, we used an application on Android called Arduino Bluetooth controller,
+Once you download the app, open it and the Bluetooth module HC-05 should be there Click on it and it should be connected to the phone now, now click on the HC-05 icon on the app the interface should be displays like this:
+ 
+Figure 1: user-interface of the app. // on the WirelessProject.pdf file 
+
+You should control of multiple things.
+In our project we only program it to turn on/off the bulbs, you could modify on the code to have full access of all the features the app has.
+ 
+Figure 2: On/Off Buttons. // on the WirelessProject.pdf file 
+Here you should have control of the bulbs wirelessly, in our project as we said earlier, we only connect 2 bulbs on the 4 channel relay module, you can connect all 4 channel it should work fine.
